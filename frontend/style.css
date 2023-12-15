@@ -1,0 +1,214 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto:wght@100;400&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-1: #fff;
+  --color-1-1: #bdbdbdc9;
+  --color-1-2: #ffffff9d;
+  --color-1-4: #123;
+  
+  --color-2: #990000;
+  --color-2-1: #b60404ec;
+  --color-2-2: #fa000086;
+  --color-3: #ff6105;
+
+  --header-h: 3em;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  color: var(--color-1);
+  text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Roboto;
+  }
+  
+  header{
+    width: 100%;
+    z-index: 1;
+    height: var(--header-h);
+  }
+
+  header > span:first-child{
+    background-color: var(--color-2-1); 
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2.5em;
+    align-items: center;
+  }
+  header > span:first-child > h1{
+    font-size: 14pt;
+  }
+  header > span:first-child > h1 span{
+    color: var(--color-3);
+  }
+
+
+  main{
+    width: 100%;
+    height: 88%;
+    background-color: var(--color-1-1);
+    margin-top: 1.66em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+    padding: .6em;
+  }
+
+
+  main aside{
+    padding: .5em;
+    height: 100%;
+    border-radius: .5em;
+  }
+  
+
+  main > aside:first-child{
+    background-color: var(--color-1-2);
+    width: 15em;
+  }
+  
+  main > aside:first-child nav{
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+  }
+
+  main > aside:first-child nav ul{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    /* gap: 1em; */
+    
+  }
+  
+  main > aside:first-child nav ul li{
+    padding-left: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1em;
+    border-radius: .5em;
+
+
+    display: flex;
+    align-items: center;
+    gap: .7em;
+
+    &:hover{
+      background-color: var(--color-2-1);
+      color: var(--color-1);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  main > aside:last-child{
+    flex: .6em;
+    background-color: var(--color-1-2);
+    overflow-x: hidden;
+  }
+  main > aside:last-child section:first-child h1{
+      text-align: center;
+  }
+
+  main > aside:last-child section:first-child h1 img{
+    height: 1em;
+    width: .5em;
+  }
+  main > aside:last-child section#artist-section {
+    background-color: var(--color-1-2);
+    width: 100%;
+    /* height: 7.2em; */
+    padding: 1em;
+    border-radius: 1em;
+
+    overflow-x: scroll;
+
+    display: flex;
+    gap: 1em;
+
+    &::-webkit-scrollbar{
+      display: none;
+    }
+
+
+  }
+
+  main > aside:last-child section#artist-section div.artist-story{
+    width: 7em;
+    
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    :hover{
+      transform: scale(1.03);
+    }
+  }
+  main > aside:last-child section#artist-section div.artist-story small:hover{
+      transition: .5s;
+      text-decoration: underline;
+    
+  }
+
+  main > aside:last-child section#artist-section .artist-story img{
+    height: 5em;
+    width: 5em;
+    background-color: blue;
+    border: .15em solid var(--color-2);
+    border-radius: 50%;
+    transition: .5s;
+  }
+ 
+
+
+
+  /* ***************************  ICONS CUSTOM   ******************************** */
+  
+   .material-symbols-outlined{
+
+      font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+  }
+
+  header span nav .material-symbols-outlined{
+    font-size: 28pt;
+    cursor: pointer;
+  }
+
+  
