@@ -1,7 +1,7 @@
 
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto:wght@100;400&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto:wght@100;400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Kanit:wght@300&family=Roboto:wght@100;400&display=swap');
 
 *{
   margin: 0;
@@ -36,6 +36,7 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: Roboto;
+    overflow: hidden;
   }
   
   header{
@@ -73,11 +74,15 @@ body {
   }
 
 
+
+
   main aside{
     padding: .5em;
     height: 100%;
     border-radius: .5em;
   }
+
+
   
 
   main > aside:first-child{
@@ -85,11 +90,41 @@ body {
     width: 15em;
   }
   
+  main > aside:first-child .logo{
+    height: 4em;
+    width: 4em;
+   
+    border: 1px solid var(--color-1);
+    border-radius: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3em;
+
+    margin: 1em 2em;
+    background-color: var(--color-1-2);
+
+    box-shadow: 0px 0px 3px 3px #a4a4a446;
+  }
+
+
+  main > aside:first-child .logo img{
+    width: 70%;
+    aspect-ratio: 16/9;
+  }
+
+  main > aside:first-child .logo small{
+    font-family: Handlee;
+    color: var(--color-3);
+  }
+  
   main > aside:first-child nav{
     height: 100%;
 
     display: flex;
-    align-items: center;
+    /* align-items: center; */
   }
 
   main > aside:first-child nav ul{
@@ -109,17 +144,23 @@ body {
     padding: 1em;
     border-radius: .5em;
 
-
+    
     display: flex;
     align-items: center;
     gap: .7em;
-
+    
     &:hover{
       background-color: var(--color-2-1);
       color: var(--color-1);
     }
   }
-
+  
+  main > aside:first-child nav ul li i{
+    font-style: normal;
+    font-size: 13pt;
+    font-weight: bold;
+    transform: rotate(180deg);
+  }
 
 
 
@@ -135,6 +176,11 @@ body {
     flex: .6em;
     background-color: var(--color-1-2);
     overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+      
   }
   main > aside:last-child section:first-child h1{
       text-align: center;
@@ -165,7 +211,6 @@ body {
 
   main > aside:last-child section#artist-section div.artist-story{
     width: 7em;
-    
     display: flex;
     flex-direction: column;
     gap: .3em;
@@ -174,11 +219,22 @@ body {
     cursor: pointer;
     
     :hover{
+      text-decoration: underline;
       transform: scale(1.03);
+
     }
   }
+  main > aside:last-child section#artist-section div.artist-story small{
+    /* background-color: blue; */
+    width: 100%;
+    height: 7.1em;
+    /* padding: ; */
+    text-align: center;
+    overflow: hidden;
+  }
+
   main > aside:last-child section#artist-section div.artist-story small:hover{
-      transition: .5s;
+      /* transition: .5s; */
       text-decoration: underline;
     
   }
@@ -186,13 +242,27 @@ body {
   main > aside:last-child section#artist-section .artist-story img{
     height: 5em;
     width: 5em;
-    background-color: blue;
     border: .15em solid var(--color-2);
     border-radius: 50%;
     transition: .5s;
   }
- 
+  
+  main > aside:last-child section#musics-section{
+    border-radius: 1em;
+    overflow-y: scroll;
+    
+    background-color: var(--color-1-2);
+    height: 100%;
+    width: 100%;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+  }
 
+  /* *********************** Logical Part ******************************************/
+  main > aside:first-child span.close{
+    display: none;
+  }
 
 
   /* ***************************  ICONS CUSTOM   ******************************** */
@@ -210,5 +280,7 @@ body {
     font-size: 28pt;
     cursor: pointer;
   }
+
+
 
   

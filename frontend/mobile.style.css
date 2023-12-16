@@ -1,0 +1,49 @@
+:root{
+    --color-1: #fff;
+    --color-1-1: #bdbdbdc9;
+    --color-1-2: #ffffff9d;
+    --color-1-4: #123;
+    
+    --color-2: #990000;
+    --color-2-1: #b60404ec;
+    --color-2-2: #fa000086;
+    --color-3: #ff6105;
+  
+    --header-h: 3em;
+  }
+
+@media screen and (max-width: 700px) {
+
+    main > aside:first-child{
+
+        position: absolute;
+        /* left: -15em; */
+        left: 0;
+        top: 4.7em;
+        background-color: #fafafaf0;
+        border-right: 1px solid var(--color-1-1);
+        border-bottom: 1px solid var(--color-1-1);
+        height: fit-content;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    main > aside:first-child span.close{
+        /* margin-left: 4em; */
+        
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        padding: .3em 1em;        
+    }
+    main > aside:first-child span.close > span{
+        font-weight: bold;
+        border-radius: 50%;
+        background-color: var(--color-2-1);
+        color: var(--color-1);
+        padding: .1em;
+        text-align: center;
+        cursor: pointer;
+    }
+}
