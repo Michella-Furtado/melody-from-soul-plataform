@@ -132,27 +132,34 @@ body {
 
     display: flex;
     flex-direction: column;
-    /* gap: 1em; */
+    gap: .5em;
     
   }
   
-  main > aside:first-child nav ul li{
+  main > aside:first-child nav ul a {
+    border-radius: .5em;
+    color: #000;
+
+
+    &:hover{
+      background-color: var(--color-2-1);
+      color: var(--color-1);
+    }
+  
+  }
+  main > aside:first-child nav ul li {
     padding-left: 2em;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
     padding: 1em;
-    border-radius: .5em;
 
     
     display: flex;
     align-items: center;
     gap: .7em;
     
-    &:hover{
-      background-color: var(--color-2-1);
-      color: var(--color-1);
-    }
+    
   }
   
   main > aside:first-child nav ul li i{

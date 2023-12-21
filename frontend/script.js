@@ -1,9 +1,10 @@
 let $ = document.querySelector.bind(document)
 
-function setColor(id) {
-    console.log(id);
-    // $("#"+id).style.
-}
+// function setColor(posi) {
+//     $("aside#left-aside ul li:nth-child("+posi+")").style.background = "#b60404ec"
+//     $("aside#left-aside ul li:nth-child("+posi+")").style.color = "#fff"
+//     // $("#"+id).style.
+// }
 
 
 function artistStory(client) {
